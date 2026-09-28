@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  platform:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./experiments:/app/experiments
+      - ./pipeline_runs:/app/pipeline_runs
