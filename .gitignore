@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+data/
+artifacts/
+experiments/
+pipeline_runs/
+*.joblib
+*.db
+.env
+.venv/
+venv/
