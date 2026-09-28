@@ -1,0 +1,21 @@
+pipeline:
+  max_parallel_tasks: 4
+  checkpoint_dir: "pipeline_runs"
+  default_timeout_seconds: 600
+
+experiment:
+  storage_dir: "experiments"
+
+registry:
+  storage_dir: "artifacts/registry"
+
+artifact_store:
+  base_dir: "artifacts/store"
+
+retraining:
+  performance_threshold: 0.02
+  staleness_days: 7
+
+serving:
+  host: "0.0.0.0"
+  port: 8000
